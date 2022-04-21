@@ -1,0 +1,214 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01W0I6LS10VZH5JzwThgScdKFQXPbtYDBMh",
+    "name": "JsonPath",
+    "title": "JsonPath",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "[\n  {\n    \"node\": \"U4CTm0SnJgiKnZQ8S0k8JA\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"cdaguanno\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-03-16 18:47:06\",\n          \"-1\",\n          \"S-1-5-21-186221909-881903050-214743031-1105\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.005991800222545862,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows Server 2016 Datacenter\",\n        \"release\": \"10.0.14393\",\n        \"version\": \"10.0.14393\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"MSCA\",\n      \"fqdn\": {\n        \"10.100.200.20\": \"MSCA.cdnet.local\",\n        \"fe80::55ee:6637:f196:5b2a\": \"MSCA.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Ethernet0\": {\n          \"name\": \"Ethernet0\",\n          \"mac\": \"00:0c:29:ff:68:71\",\n          \"ipv4\": \"10.100.200.20/24\",\n          \"ipv6\": \"fe80::55ee:6637:f196:5b2a/64\",\n          \"active\": true\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-16T14:45:42.6420249Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-1505222926-140328392-3140428591\",\n      \"anyconnectudid\": \"8410F04C1547972A89BC2B811760E19A539DF935\"\n    },\n    \"rowcount\": 1\n  },\n  {\n    \"node\": \"QRh6BCoT_fKKyYeTJ_RG5Q\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"mary\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-03-21 20:10:42\",\n          \"-1\",\n          \"S-1-5-21-186221909-881903050-214743031-1106\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.004792000167071819,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows 10 Pro\",\n        \"release\": \"10.0.19043\",\n        \"version\": \"10.0.19043\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"Mary-Surface\",\n      \"fqdn\": {\n        \"10.100.100.103\": \"Mary-Surface.cdnet.local\",\n        \"10.100.100.108\": \"Mary-Surface.cdnet.local\",\n        \"127.0.0.1\": \"Mary-Surface.cdnet.local\",\n        \"169.254.153.8\": \"Mary-Surface.cdnet.local\",\n        \"::1\": \"Mary-Surface.cdnet.local\",\n        \"fe80::a898:dab1:1ff:9908\": \"Mary-Surface.cdnet.local\",\n        \"fe80::d06a:fe45:c054:8b9e\": \"Mary-Surface.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Npcap Loopback Adapter\": {\n          \"name\": \"Npcap Loopback Adapter\",\n          \"mac\": \"02:00:4c:4f:4f:50\",\n          \"ipv4\": \"169.254.153.8/16\",\n          \"ipv6\": \"fe80::a898:dab1:1ff:9908/64\",\n          \"active\": false\n        },\n        \"Wi-Fi\": {\n          \"name\": \"Wi-Fi\",\n          \"mac\": \"f0:1d:bc:8d:36:9a\",\n          \"ipv4\": \"10.100.100.103/24\",\n          \"ipv6\": \"fe80::d06a:fe45:c054:8b9e/64\",\n          \"active\": true\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-29T12:10:50.0267925Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-2042807338-3336862997-2437816715\",\n      \"anyconnectudid\": \"\"\n    },\n    \"rowcount\": 1\n  },\n  {\n    \"node\": \"XO9HK5KjqaWRHxIR5AZHHA\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"cdaguanno\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-03-14 20:53:59\",\n          \"-1\",\n          \"S-1-5-21-186221909-881903050-214743031-1105\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.009538499638438225,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows 10 Pro\",\n        \"release\": \"10.0.19044\",\n        \"version\": \"10.0.19044\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"LABVM01\",\n      \"fqdn\": {\n        \"10.100.130.23\": \"LABVM01.cdnet.local\",\n        \"fe80::dc92:3a9b:8765:952c\": \"LABVM01.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Ethernet0\": {\n          \"name\": \"Ethernet0\",\n          \"mac\": \"00:50:56:a1:76:e9\",\n          \"ipv4\": \"10.100.130.23/24\",\n          \"ipv6\": \"fe80::dc92:3a9b:8765:952c/64\",\n          \"active\": true\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-21T16:28:17.8049044Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-1356815833-2718671337-1624909219\",\n      \"anyconnectudid\": \"06B4B0FB3C0233D771DC429A95DABA3904FAA8AE\"\n    },\n    \"rowcount\": 1\n  },\n  {\n    \"node\": \"4_q0d7NubnoYZ-wqICdFAw\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"cdaguanno\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-03-08 00:24:36\",\n          \"-1\",\n          \"S-1-5-21-186221909-881903050-214743031-1105\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.008004499599337578,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows Server 2016 Datacenter\",\n        \"release\": \"10.0.14393\",\n        \"version\": \"10.0.14393\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"UmbAdConn\",\n      \"fqdn\": {\n        \"10.100.100.13\": \"UmbAdConn.cdnet.local\",\n        \"::1\": \"UmbAdConn.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Ethernet0\": {\n          \"name\": \"Ethernet0\",\n          \"mac\": \"00:50:56:a1:a2:1a\",\n          \"ipv4\": \"10.100.100.13/24\",\n          \"active\": true\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-21T16:42:13.878254Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-1433711312-3682360680-2755611992\",\n      \"anyconnectudid\": \"2F35AA8153CE3C66F4B1104718CC5E6AEF2EB477\"\n    },\n    \"rowcount\": 1\n  },\n  {\n    \"node\": \"ANg14AhGh6DzLgdCzCdhvA\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"Administrator\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-02-01 22:14:41\",\n          \"-1\",\n          \"S-1-5-21-186221909-881903050-214743031-500\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.008985299617052078,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows Server 2016 Datacenter\",\n        \"release\": \"10.0.14393\",\n        \"version\": \"10.0.14393\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"CDNETDC01\",\n      \"fqdn\": {\n        \"10.100.200.8\": \"CDNETDC01.cdnet.local\",\n        \"2001:0:34f1:8072:84d:3bac:f59b:37f7\": \"CDNETDC01.cdnet.local\",\n        \"fe80::84d:3bac:f59b:37f7\": \"CDNETDC01.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Ethernet0\": {\n          \"name\": \"Ethernet0\",\n          \"mac\": \"00:50:56:a1:e8:a2\",\n          \"ipv4\": \"10.100.200.8/24\",\n          \"active\": true\n        },\n        \"Teredo Tunneling Pseudo-Interface\": {\n          \"name\": \"Teredo Tunneling Pseudo-Interface\",\n          \"mac\": \"00:00:00:00:00:00:00:e0\",\n          \"ipv6\": \"fe80::84d:3bac:f59b:37f7/64\",\n          \"active\": false\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-14T18:05:10.1616241Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-1276372404-2407626826-1299892776\",\n      \"anyconnectudid\": \"7669000B65AFED31D848F54CB7D3467CD4431180\"\n    },\n    \"rowcount\": 1\n  },\n  {\n    \"node\": \"yrkgdgCDXLX35F3ci8dFlA\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"jadoe\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-03-25 19:13:43\",\n          \"-1\",\n          \"S-1-5-21-186221909-881903050-214743031-1174\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.010641899891197681,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows 10 Pro\",\n        \"release\": \"10.0.19042\",\n        \"version\": \"10.0.19042\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"LABVM02\",\n      \"fqdn\": {\n        \"10.100.130.21\": \"LABVM02.cdnet.local\",\n        \"fe80::8018:1bb9:b075:c128\": \"LABVM02.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Ethernet0\": {\n          \"name\": \"Ethernet0\",\n          \"mac\": \"00:50:56:a1:d5:39\",\n          \"ipv4\": \"10.100.130.21/24\",\n          \"ipv6\": \"fe80::8018:1bb9:b075:c128/64\",\n          \"active\": true\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-25T12:58:54.8096106Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-1150408217-3431686522-357552796\",\n      \"anyconnectudid\": \"E704A5FE1ABBA73EE591D0F7D559CEE4205FBFB2\"\n    },\n    \"rowcount\": 1\n  },\n  {\n    \"node\": \"gL0GhOdUC0EDOvbaYF5P1g\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"Administrator\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-03-13 22:43:46\",\n          \"-1\",\n          \"S-1-5-21-3793590013-164305996-3397803386-500\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.009000499732792377,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows Server 2016 Datacenter\",\n        \"release\": \"10.0.14393\",\n        \"version\": \"10.0.14393\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"TESTSRV\",\n      \"fqdn\": {\n        \"10.100.111.103\": \"TESTSRV.cdnet.local\",\n        \"169.254.54.222\": \"TESTSRV.cdnet.local\",\n        \"fe80::549f:18ca:c70a:c972\": \"TESTSRV.cdnet.local\",\n        \"fe80::6d62:3ee3:b2c1:36de\": \"TESTSRV.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Ethernet0\": {\n          \"name\": \"Ethernet0\",\n          \"mac\": \"00:0c:29:7e:ce:3b\",\n          \"ipv4\": \"10.100.111.103/24\",\n          \"ipv6\": \"fe80::549f:18ca:c70a:c972/64\",\n          \"active\": true\n        },\n        \"Npcap Loopback Adapter\": {\n          \"name\": \"Npcap Loopback Adapter\",\n          \"mac\": \"02:00:4c:4f:4f:50\",\n          \"ipv4\": \"169.254.54.222/16\",\n          \"ipv6\": \"fe80::6d62:3ee3:b2c1:36de/64\",\n          \"active\": false\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-08T01:54:06.4031826Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-3793590013-164305996-3397803386\",\n      \"anyconnectudid\": \"AEF6AC2C51963044F862569EBD024E178C4D2EC3\"\n    },\n    \"rowcount\": 1\n  },\n  {\n    \"node\": \"UnTz2XyZPq1l6sTAYYApKg\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"admin\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-03-09 08:27:57\",\n          \"-1\",\n          \"S-1-5-21-1136854946-2076742315-3322463142-1002\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.010512599721550941,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows 10 Pro\",\n        \"release\": \"10.0.19044\",\n        \"version\": \"10.0.19044\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"Admin-JumpVM\",\n      \"fqdn\": {\n        \"10.100.111.101\": \"Admin-JumpVM.cdnet.local\",\n        \"169.254.102.68\": \"Admin-JumpVM.cdnet.local\",\n        \"fe80::7089:c6f1:b27a:6644\": \"Admin-JumpVM.cdnet.local\",\n        \"fe80::f529:52a9:86b2:7e96\": \"Admin-JumpVM.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Ethernet0\": {\n          \"name\": \"Ethernet0\",\n          \"mac\": \"00:50:56:a1:08:76\",\n          \"ipv4\": \"10.100.111.101/24\",\n          \"ipv6\": \"fe80::f529:52a9:86b2:7e96/64\",\n          \"active\": true\n        },\n        \"Npcap Loopback Adapter\": {\n          \"name\": \"Npcap Loopback Adapter\",\n          \"mac\": \"02:00:4c:4f:4f:50\",\n          \"ipv4\": \"169.254.102.68/16\",\n          \"ipv6\": \"fe80::7089:c6f1:b27a:6644/64\",\n          \"active\": false\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-21T17:03:11.8472698Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-1136854946-2076742315-3322463142\",\n      \"anyconnectudid\": \"F025F725FF85EBCD7D80CBBF4DDA69820C0BE14C\"\n    },\n    \"rowcount\": 1\n  },\n  {\n    \"node\": \"A085xFshNBPB_2XGZAwc_g\",\n    \"ampuuid\": \"\",\n    \"lastseen\": null,\n    \"osQuery\": [\n      {\n        \"types\": [\n          \"user\",\n          \"logged_in_users_type\",\n          \"logged_in_users_tty\",\n          \"logged_in_users_host\",\n          \"logged_in_users_time\",\n          \"pid\",\n          \"logged_in_users_sid\"\n        ],\n        \"sql\": \"SELECT \\\\nuser, type as \\\\\\\"login_type\\\\\\\", tty as \\\\\\\"device_name\\\\\\\", \\\\nhost as \\\\\\\"remote_hostname\\\\\\\", DATETIME(time, \\\\\\\"unixepoch\\\\\\\", \\\\\\\"UTC\\\\\\\") AS time, \\\\npid, sid  \\\\nFROM logged_in_users\\\\nWHERE \\\\nuser!=\\\\\\\"\\\\\\\";\\\\n\",\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"osQueryResult\": [\n      {\n        \"types\": [\n          \"user\",\n          \"\",\n          \"device\",\n          \"hostname\",\n          \"\",\n          \"\",\n          \"\"\n        ],\n        \"columns\": [\n          \"user\",\n          \"login_type\",\n          \"device_name\",\n          \"remote_hostname\",\n          \"time\",\n          \"pid\",\n          \"sid\"\n        ],\n        \"values\": [\n          \"cdaguanno\",\n          \"active\",\n          \"Console\",\n          \"\",\n          \"2022-02-25 11:33:11\",\n          \"-1\",\n          \"S-1-5-21-186221909-881903050-214743031-1105\",\n          \"cdaguanno\",\n          \"active\",\n          \"RDP-Tcp#7\",\n          \"\",\n          \"2022-03-28 23:22:22\",\n          \"-1\",\n          \"S-1-5-21-186221909-881903050-214743031-1105\"\n        ],\n        \"error\": \"\",\n        \"secs\": 0.024813100695610046,\n        \"label\": \"logged_in_users\",\n        \"name\": \"Logged In Users\"\n      }\n    ],\n    \"error\": {\n      \"en\": \"\"\n    },\n    \"hostinfo\": {\n      \"osinfo\": {\n        \"os\": \"windows\",\n        \"osname\": \"Microsoft Windows Server 2016 Datacenter\",\n        \"release\": \"10.0.14393\",\n        \"version\": \"10.0.14393\",\n        \"arch\": \"amd64\"\n      },\n      \"hostname\": \"MSTSserver\",\n      \"fqdn\": {\n        \"10.100.200.30\": \"MSTSserver.cdnet.local\",\n        \"fe80::884d:256:9d82:2a1\": \"MSTSserver.cdnet.local\"\n      },\n      \"interfaces\": {\n        \"Ethernet0\": {\n          \"name\": \"Ethernet0\",\n          \"mac\": \"00:50:56:a1:43:d1\",\n          \"ipv4\": \"10.100.200.30/24\",\n          \"ipv6\": \"fe80::884d:256:9d82:2a1/64\",\n          \"active\": true\n        }\n      },\n      \"external\": {\n        \"name\": \"\",\n        \"mac\": \"\",\n        \"ipv4\": \"108.29.68.172\",\n        \"active\": true\n      },\n      \"updated\": \"2022-03-21T16:36:46.1342334Z\",\n      \"version\": \"1.18.3\",\n      \"osqueryversion\": \"4.8.0\",\n      \"machine\": \"S-1-5-21-1309385128-1556604090-1762969627\",\n      \"anyconnectudid\": \"4E1A0015FA47A3BED04398EFB639F43CF46C38FA\"\n    },\n    \"rowcount\": 2\n  }\n]",
+          "scope": "local",
+          "name": "JSON_Output",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01W155MGV2PAO1dDwbwLVahSR6E2VTVOfyU",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "JsonObjID",
+          "type": "datatype.integer",
+          "description": "JsonObjID",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01W14QOZRC1VZ1f1wlU8xnIRhuEH7rFiuBg",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "UserName",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01W1520O0KK5F55zgRKZC673hEXlt5l0PQj",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "display_name": "JsonPath",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01W0K78N4W4HM5aOlRGHTKTeLFDehVGwIvO",
+        "name": "While Loop",
+        "title": "While Loop",
+        "type": "logic.while",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "While Loop",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_01W0K78NOKNCQ5CfYVRDHMK5i3DYJYk4fPr",
+            "name": "Condition Branch",
+            "title": "Condition Branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "condition": {
+                "left_operand": "$workflow.definition_workflow_01W0I6LS10VZH5JzwThgScdKFQXPbtYDBMh.local.variable_workflow_01W14QOZRC1VZ1f1wlU8xnIRhuEH7rFiuBg$",
+                "operator": "ne",
+                "right_operand": 10
+              },
+              "continue_on_failure": false,
+              "display_name": "Condition Branch",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01W0I6ND9V3MA0I2vPk41XBmRCcXFLLHFm4",
+                "name": "JSONPath Query",
+                "title": "JSONPath Query",
+                "type": "corejava.jsonpathquery",
+                "base_type": "activity",
+                "properties": {
+                  "action_timeout": 180,
+                  "continue_on_failure": true,
+                  "display_name": "JSONPath Query",
+                  "input_json": "$workflow.definition_workflow_01W0I6LS10VZH5JzwThgScdKFQXPbtYDBMh.local.variable_workflow_01W155MGV2PAO1dDwbwLVahSR6E2VTVOfyU$",
+                  "jsonpath_queries": [
+                    {
+                      "jsonpath_query": "$[$workflow.definition_workflow_01W0I6LS10VZH5JzwThgScdKFQXPbtYDBMh.local.variable_workflow_01W14QOZRC1VZ1f1wlU8xnIRhuEH7rFiuBg$].osQueryResult[0].values[0]",
+                      "jsonpath_query_name": "User",
+                      "jsonpath_query_type": "string"
+                    }
+                  ],
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_01W17BPK5IKUC7N8I5HGr8MwnflHWVkJnNK",
+                "name": "Condition Block",
+                "title": "Is EOF?",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Is EOF?",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_01W17BPKK5ZGM2X7eJ0HPcmGoVDxI1xSA1O",
+                    "name": "Condition Branch",
+                    "title": "YES",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_01W0I6ND9V3MA0I2vPk41XBmRCcXFLLHFm4.output.succeeded$",
+                        "operator": "eq",
+                        "right_operand": false
+                      },
+                      "continue_on_failure": false,
+                      "display_name": "YES",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01W17C59FHS3M5D8eoVvCvlopVuxLrqZ6HP",
+                        "name": "Completed",
+                        "title": "Completed",
+                        "type": "logic.completed",
+                        "base_type": "activity",
+                        "properties": {
+                          "completion_type": "succeeded",
+                          "continue_on_failure": false,
+                          "display_name": "Completed",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_01W14ZJWQ1OSV1zCNs396zdXTx6fBlYwcKL",
+                "name": "Set Variables",
+                "title": "Set User Name",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Set User Name",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_01W0I6LS10VZH5JzwThgScdKFQXPbtYDBMh.local.variable_workflow_01W1520O0KK5F55zgRKZC673hEXlt5l0PQj$",
+                      "variable_value_new": "$activity.definition_activity_01W0I6ND9V3MA0I2vPk41XBmRCcXFLLHFm4.output.jsonpath_queries.User$"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_01W14OU27E4MY1b2TSu02hya6hfVvdaqYH0",
+                "name": "Set Variables",
+                "title": "ObJID Counter",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "ObJID Counter",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_01W0I6LS10VZH5JzwThgScdKFQXPbtYDBMh.local.variable_workflow_01W14QOZRC1VZ1f1wlU8xnIRhuEH7rFiuBg$",
+                      "variable_value_new": "$workflow.definition_workflow_01W0I6LS10VZH5JzwThgScdKFQXPbtYDBMh.local.variable_workflow_01W14QOZRC1VZ1f1wlU8xnIRhuEH7rFiuBg$ + 1"
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  }
+}
